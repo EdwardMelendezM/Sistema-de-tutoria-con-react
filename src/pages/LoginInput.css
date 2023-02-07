@@ -21,10 +21,9 @@
   background-color: var(--color-secundario);
 }
 .mainLogin {
-  background-image: url("./unsaac.jpg");
+  background-image: url("./fondoHD.jpg");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 100%;
 }
 .mainLogin .container-login {
   max-width: 400px;
