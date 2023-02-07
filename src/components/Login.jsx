@@ -5,7 +5,7 @@ import Home from "./../pages/Home";
 import Error404 from "./../pages/Error404";
 import Footer from "./../pages/Footer";
 import PrivateRoute from "./PrivateRoute";
-import Nosotros from "./../pages/Nosotros";
+import Objetivos from "../pages/Objetivos";
 import Contactos from "./../pages/Contactos";
 import Ayuda from "./../pages/Ayuda";
 import Computo from "../pages/Computo";
@@ -17,7 +17,7 @@ const Login = () => {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/nosotros" element={<Nosotros />} />
+          <Route path="/objetivos" element={<Objetivos />} />
           <Route path="/contacto" element={<Contactos />} />
           <Route path="/ayuda" element={<Ayuda />} />
           <Route path="/login" element={<LoginInput />} />

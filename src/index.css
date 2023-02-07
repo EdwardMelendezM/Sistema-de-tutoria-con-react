@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&family=Inter:wght@300&family=Montserrat&family=Raleway:wght@400;700&family=Signika:wght@300&display=swap");
+:root {
+  --color-principal: #7b1523;
+  --color-alpha-principal: #a21b2d;
+  --color-secundario: #231e1e;
+  --color-alpha-secundario: #3a3232;
+  --color-alpha-tile: #e9d1d1;
+  --color-title: #e6b36d;
+  --font-title: "Montserrat", sans-serif;
+  --font-second-title: "Signika", sans-serif;
+  --font-alpha-title: "Baloo Thambi 2", cursive;
+  --font-parrafo: "Inter", sans-serif;
+  --font-alhpa-parrafo: "Raleway", sans-serif;
+}
+img {
+  max-width: 100px;
+}
