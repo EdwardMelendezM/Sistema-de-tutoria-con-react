@@ -13,7 +13,7 @@ const Objetivos = () => {
       <div className="row">
         <img src="alumnosJunta2.png" alt="Alumnos reunion" />
         <div className="col">
-          <h3>¿Que te proponemos?</h3>
+          <h3>¿Qué te proponemos?</h3>
           <p>
             Poner a disposicion, herramientas y recursos para fortalecer tu roll
             y brindar acompañamiento socioefectivo y cognitivo a los estudiantes

@@ -1,5 +1,5 @@
 import { HashRouter as Router, Route, Routes } from "react-router-dom";
-import LoginInput from "./LoginInput";
+import LoginInput from "./../pages/LoginInput";
 import Header from "./../pages/Header";
 import Home from "./../pages/Home";
 import Error404 from "./../pages/Error404";
@@ -8,7 +8,7 @@ import PrivateRoute from "./PrivateRoute";
 import Objetivos from "../pages/Objetivos";
 import Contactos from "./../pages/Contactos";
 import Ayuda from "./../pages/Ayuda";
-import Computo from "../pages/Computo";
+import Computo from "./../pages/Computo";
 
 const Login = () => {
   return (

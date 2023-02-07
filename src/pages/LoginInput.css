@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&family=Inter:wght@300&family=Montserrat&family=Raleway:wght@400;700&family=Signika:wght@300&display=swap");
+:root {
+  --color-principal: #7b1523;
+  --color-alpha-principal: #a21b2d;
+  --color-secundario: #231e1e;
+  --color-alpha-secundario: #3a3232;
+  --color-alpha-tile: #e9d1d1;
+  --color-title: #e6b36d;
+  --font-title: "Montserrat", sans-serif;
+  --font-second-title: "Signika", sans-serif;
+  --font-alpha-title: "Baloo Thambi 2", cursive;
+  --font-parrafo: "Inter", sans-serif;
+  --font-alpha-parrafo: "Raleway", sans-serif;
+}
+.mainLogin {
+  min-height: 75vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-secundario);
+}
+.mainLogin {
+  background-image: url("./unsaac.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+}
+.mainLogin .container-login {
+  max-width: 400px;
+  min-height: 64vh;
+  width: 60%;
+  background-color: var(--color-principal);
+  background: linear-gradient(
+    to right,
+    var(--color-principal),
+    #731e29,
+    #611922
+  );
+  display: inherit;
+  flex-direction: column;
+  text-align: center;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: 1px 1px 4px var(--color-alpha-tile);
+}
+.mainLogin .container-login h2 {
+  margin-top: 30px;
+  color: var(--color-alpha-tile);
+  font-family: var(--font-alpha-title);
+  font-size: 2rem;
+}
+.mainLogin .container-login .form-part {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 50px;
+}
+.mainLogin .container-login .form-part input[type="text"],
+.mainLogin .container-login .form-part input[type="text"]::after,
+.mainLogin .container-login .form-part input[type="password"] {
+  width: 70%;
+  padding: 5px;
+  margin: 10px;
+  font-family: var(--font-alpha-parrafo);
+  border: 0;
+  border-bottom: 2px solid #fff;
+  padding: 8px;
+  font-size: 14px;
+  transition: all 0.2s ease-in-out;
+  background-color: transparent;
+  color: #fff;
+}
+.mainLogin .container-login .form-part input[type="text"]::placeholder,
+.mainLogin .container-login .form-part input[type="password"]::placeholder {
+  color: var(--color-alpha-tile);
+}
+.mainLogin .container-login .form-part input[type="text"]:focus,
+.mainLogin .container-login .form-part input[type="password"]:focus {
+  outline: none;
+  padding: 8px 12px;
+}
+
+.mainLogin .container-login .form-part input[type="text"]::after,
+.mainLogin .container-login .form-part input[type="text"]::before,
+.mainLogin .container-login .form-part input[type="password"]::after,
+.mainLogin .container-login .form-part input[type="password"]::before {
+  background-color: transparent;
+}
+.mainLogin .container-login .form-part .olvidaste {
+  color: var(--color-title);
+  border: 0;
+  border-bottom: 0.3px solid #e6b36d;
+}
+.mainLogin .container-login .buttons {
+  margin-top: 60px;
+}
+.mainLogin .container-login .buttons button {
+  padding: 9px;
+  border: 2px solid var(--color-alpha-tile);
+  background-color: #611922;
+  border-radius: 4px;
+  color: var(--color-alpha-tile);
+  min-width: 250px;
+  min-height: 35px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.mainLogin .container-login .buttons button:hover {
+  box-shadow: 0 0 10px var(--color-alpha-tile);
+  background-color: #a21b2d;
+}

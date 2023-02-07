@@ -32,11 +32,14 @@ const Header = () => {
             <NavLink activeclassname="active" className="enlace" to="/ayuda">
               Ayuda
             </NavLink>
-            <button className="botonLogin">
-              <NavLink activeclassname="active" className="enlace" to="/login">
-                Login
-              </NavLink>
-            </button>
+
+            <NavLink
+              activeclassname="active"
+              className="enlace botonLogin"
+              to="/login"
+            >
+              <button className="botonLogin">Login</button>
+            </NavLink>
           </div>
         </nav>
       </header>

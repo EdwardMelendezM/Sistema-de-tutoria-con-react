@@ -7,10 +7,10 @@ const Contactos = () => {
           <b>Email:</b> unsaac@unsaac.edu.pe
         </h3>
         <h3>
-          <b>Telefono: </b> 5711778
+          <b>Teléfono: </b> 5711778
         </h3>
         <h3>
-          <b>Direccion:</b> Av. la cultura 404
+          <b>Dirección:</b> Av. la cultura 404
         </h3>
       </div>
     </main>

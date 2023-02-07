@@ -53,10 +53,12 @@ header nav .containerEnlaces .botonLogin {
   border: 0;
   border-radius: 10px;
 }
-header nav .containerEnlaces .botonLogin .enlace {
+header nav .containerEnlaces .enlace .botonLogin {
   color: var(--color-principal);
-  font-size: 21px;
-  font-weight: bold;
+  font-size: 18px;
+}
+header nav .containerEnlaces .enlace .botonLogin:hover {
+  cursor: pointer;
 }
 @media (max-width: 1210px) {
   header {
