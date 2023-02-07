@@ -1,5 +1,20 @@
+import "./Contactos.css";
 const Contactos = () => {
-  return <h3>Contactos</h3>;
+  return (
+    <main className="mainContactos">
+      <div className="row">
+        <h3>
+          <b>Email:</b> unsaac@unsaac.edu.pe
+        </h3>
+        <h3>
+          <b>Telefono: </b> 5711778
+        </h3>
+        <h3>
+          <b>Direccion:</b> Av. la cultura 404
+        </h3>
+      </div>
+    </main>
+  );
 };
 
 export default Contactos;

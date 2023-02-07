@@ -12,12 +12,23 @@
   --font-parrafo: "Inter", sans-serif;
   --font-alpha-parrafo: "Raleway", sans-serif;
 }
-html,
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+.mainContactos {
+  width: 100%;
+  background-color: var(--color-secundario);
+  height: 80vh;
 }
-html {
-  background-color: var(--color-principal);
+.mainContactos .row {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.mainContactos .row h3 {
+  color: var(--color-alpha-tile);
+  font-family: var(--font-alpha-title);
+  font-size: 2rem;
+}
+.mainContactos .row b {
+  color: var(--color-title);
 }

@@ -39,7 +39,7 @@ header nav .containerEnlaces {
 header nav .containerEnlaces .enlace {
   text-decoration: none;
   color: white;
-  font-family: var(--font-alhpa-parrafo);
+  font-family: var(--font-alpha-parrafo);
 
   font-size: 18px;
 }

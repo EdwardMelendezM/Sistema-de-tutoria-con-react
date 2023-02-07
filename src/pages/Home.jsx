@@ -1,7 +1,7 @@
 import "./Home.css";
 const Home = () => {
   return (
-    <main>
+    <main className="mainHome">
       <div className="principal">
         <img
           src="/unsaac-2.png"

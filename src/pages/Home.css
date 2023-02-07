@@ -1,35 +1,22 @@
-:root {
-  --color-principal: #7b1523;
-  --color-alpha-principal: #a21b2d;
-  --color-secundario: #231e1e;
-  --color-alpha-secundario: #3a3232;
-  --color-alpha-tile: #e9d1d1;
-  --color-title: #e6b36d;
-  --font-title: "Montserrat", sans-serif;
-  --font-second-title: "Signika", sans-serif;
-  --font-alpha-title: "Baloo Thambi 2", cursive;
-  --font-parrafo: "Inter", sans-serif;
-  --font-alpha-parrafo: "Raleway", sans-serif;
-}
-main {
+.mainHome {
   min-height: 60vh;
 }
-main .principal {
+.mainHome .principal {
   width: 100%;
   height: auto;
 }
-main .principal .tricentenario {
+.mainHome .principal .tricentenario {
   width: 100%;
 }
 .alumnos {
   width: 100%;
 }
-main .row {
+.mainHome .row {
   width: 100%;
   min-height: 30vh;
   display: flex;
 }
-main .row .parte1 {
+.mainHome .row .parte1 {
   background-color: var(--color-principal);
   width: 50%;
   display: flex;
@@ -37,30 +24,30 @@ main .row .parte1 {
   justify-content: center;
   flex-direction: column;
 }
-main .row .parte1 h3 {
+.mainHome .row .parte1 h3 {
   font-family: var(--font-alpha-parrafo);
   font-size: 9vh;
   font-weight: bold;
   color: #fff;
 }
-main .row .parte1 p {
+.mainHome .row .parte1 p {
   font-family: var(--font-alpha-title);
   font-size: 3vh;
   color: var(--color-alpha-tile);
 }
-main .row .parte2 {
+.mainHome .row .parte2 {
   width: 50%;
 }
 
 @media (max-width: 1210px) {
-  main .row {
+  .mainHome .row {
     flex-direction: column;
   }
-  main .row .parte1,
-  main .row .parte2 {
+  .mainHome .row .parte1,
+  .mainHome .row .parte2 {
     width: 100%;
   }
-  main .row .parte1 {
+  .mainHome .row .parte1 {
     padding: 60px;
   }
 }
