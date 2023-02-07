@@ -2,6 +2,7 @@ import "./Objetivos.css";
 const Objetivos = () => {
   return (
     <main className="mainObjetivos">
+      <img src="/adorno1.png" alt="adorno" className="adorno1" />
       <div className="row">
         <div className="col">
           <h3>¿A quién va dirigido?</h3>
@@ -15,10 +16,11 @@ const Objetivos = () => {
           <h3>¿Que te proponemos?</h3>
           <p>
             Poner a disposicion, herramientas y recursos para fortalecer tu roll
-            y brindar acompñamiento socioefectivo y cognitivo a los estudiantes
+            y brindar acompañamiento socioefectivo y cognitivo a los estudiantes
           </p>
         </div>
       </div>
+      <img src="/adorno1.png" alt="adorno" className="adorno1" />
     </main>
   );
 };

@@ -12,6 +12,11 @@
   --font-parrafo: "Inter", sans-serif;
   --font-alhpa-parrafo: "Raleway", sans-serif;
 }
+.adorno1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
 
 .mainObjetivos {
   display: flex;
