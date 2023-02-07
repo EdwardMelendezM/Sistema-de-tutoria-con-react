@@ -1,0 +1,20 @@
+footer {
+  width: 100%;
+  min-height: 5vh;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: var(--color-alpha-principal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer h3 {
+  color: #fff;
+  font-size: 25px;
+  text-align: center;
+  align-items: center;
+  font-family: var(--font-alpha-parrafo);
+}
+.correo {
+  color: #e37070;
+}

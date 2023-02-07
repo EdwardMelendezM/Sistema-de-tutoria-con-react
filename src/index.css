@@ -12,6 +12,12 @@
   --font-parrafo: "Inter", sans-serif;
   --font-alhpa-parrafo: "Raleway", sans-serif;
 }
-img {
-  max-width: 100px;
+html,
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  background-color: var(--color-principal);
 }

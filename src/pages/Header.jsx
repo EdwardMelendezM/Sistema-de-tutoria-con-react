@@ -7,25 +7,33 @@ const Header = () => {
       <header>
         <nav>
           <div className="containerTitulo">
-            <img src="./public/logo-unsaac.png" alt="Logo unsaac" />
+            <img
+              src="/logo-unsaac.png"
+              alt="Logo unsaac"
+              className="logo-unsaac"
+            />
             <p className="tituloPrincipal">UNSAAC</p>
             <p className="tituloSecundario">TUTORIAS</p>
           </div>
           <div className="containerEnlaces">
-            <NavLink className="enlace" to="/">
+            <NavLink activeclassname="active" className="enlace" to="/">
               Home
             </NavLink>
-            <NavLink className="enlace" to="/objetivos">
+            <NavLink
+              activeclassname="active"
+              className="enlace"
+              to="/objetivos"
+            >
               Objetivos
             </NavLink>
-            <NavLink className="enlace" to="/contacto">
+            <NavLink activeclassname="active" className="enlace" to="/contacto">
               Contacto
             </NavLink>
-            <NavLink className="enlace" to="/ayuda">
+            <NavLink activeclassname="active" className="enlace" to="/ayuda">
               Ayuda
             </NavLink>
             <button className="botonLogin">
-              <NavLink className="enlace" to="/login">
+              <NavLink activeclassname="active" className="enlace" to="/login">
                 Login
               </NavLink>
             </button>

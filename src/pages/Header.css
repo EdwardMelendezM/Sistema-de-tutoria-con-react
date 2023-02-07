@@ -1,13 +1,10 @@
-html,
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+.logo-unsaac {
+  max-width: 90px;
 }
 header {
   background: var(--color-principal);
   width: 100%;
-  height: 150px;
+  height: 20vh;
 }
 header nav {
   display: flex;
@@ -42,9 +39,12 @@ header nav .containerEnlaces {
 header nav .containerEnlaces .enlace {
   text-decoration: none;
   color: white;
-  font-family: var(--font-parrafo);
-  font-weight: bold;
-  font-size: 17px;
+  font-family: var(--font-alhpa-parrafo);
+
+  font-size: 18px;
+}
+header nav .containerEnlaces .active {
+  color: var(--color-title);
 }
 
 header nav .containerEnlaces .botonLogin {
@@ -60,7 +60,7 @@ header nav .containerEnlaces .botonLogin .enlace {
 }
 @media (max-width: 1210px) {
   header {
-    height: 210px;
+    height: 25vh;
   }
   header nav {
     flex-direction: column;
