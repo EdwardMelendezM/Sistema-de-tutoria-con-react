@@ -1,7 +1,7 @@
 const Error404 = () => {
   return (
-    <div>
-      <h3>Error 404</h3>
+    <div className="mainError404">
+      <img src="./error404.png" alt="error 404" />
     </div>
   );
 };
