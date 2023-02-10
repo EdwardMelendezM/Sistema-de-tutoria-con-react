@@ -1,0 +1,84 @@
+.mainAyuda {
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0px 0px 10px #e9d1d140;
+}
+.mainAyuda h3 {
+  text-align: center;
+  font-size: 30px;
+  text-align: center;
+  font-family: var(--font-second-title);
+  color: var(--color-secundario);
+  z-index: 999;
+  text-align: center;
+}
+.mainAyuda h2 {
+  position: relative;
+  font-family: var(--font-second-title);
+  color: #e6b36d;
+  z-index: 999;
+  text-align: center;
+  z-index: 1;
+}
+.mainAyuda .row {
+  margin: 10px 0px;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.mainAyuda .row .article {
+  min-height: 50vh;
+  min-height: 60vh;
+  display: grid;
+  grid-gap: 0px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  background-color: #231e1e;
+  opacity: 0.5;
+}
+
+.mainAyuda .row .article .cardContext {
+  padding: 15px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+}
+.mainAyuda .row .article .cardContext h3 {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+.img1 {
+  background-image: url("./psicologo1.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.img2 {
+  z-index: -1;
+
+  background-image: url("./psicologo2.jfif");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.img3 {
+  z-index: -1;
+
+  background-image: url("./psicologo3.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.img4 {
+  z-index: -1;
+  background-image: url("./psicologo4.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
