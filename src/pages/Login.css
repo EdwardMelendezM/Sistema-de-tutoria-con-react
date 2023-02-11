@@ -97,3 +97,6 @@
   box-shadow: 0 0 10px var(--color-alpha-tile);
   background-color: #a21b2d;
 }
+.errorActivado {
+  box-shadow: 0px 0px 20px #a21b2d;
+}

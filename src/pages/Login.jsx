@@ -1,20 +1,9 @@
-import "./LoginInput.css";
-import React, { useState } from "react";
-const LoginInput = () => {
-  const initialForm = {
-    usuario: "",
-    contraseña: "",
-  };
-  const [form, setForm] = useState(initialForm);
-  const handleInput = (e) => {
-    setForm({
-      ...form,
-      [e.target.name]: e.target.value,
-    });
-  };
-  const handleSubmit = (e) => {
-    e.preventDefault();
-  };
+import "./Login.css";
+import React, { useContext } from "react";
+import LoginContext from "../contexts/loginContext";
+const Login = () => {
+  const { form, handleSubmit, handleInput, oportunidad } =
+    useContext(LoginContext);
   return (
     <main className="mainLogin">
       <div className="container-login">
@@ -29,6 +18,7 @@ const LoginInput = () => {
               placeholder="Usuario"
               value={form.usuario}
               onChange={handleInput}
+              className={oportunidad != 3 ? "errorActivado" : ""}
             />
           </div>
           <div className="form-part">
@@ -40,10 +30,17 @@ const LoginInput = () => {
               placeholder="Contraseña"
               value={form.contraseña}
               onChange={handleInput}
+              className={oportunidad != 3 ? "errorActivado" : ""}
             />
           </div>
           <div className="form-part">
-            <p className="olvidaste">¿Olvidaste tu contraseña?</p>
+            {oportunidad != 3 ? (
+              <p className="olvidaste">
+                El usuario {form.usuario} y la contraseña no coinciden
+              </p>
+            ) : (
+              <p className="olvidaste">¿Olvidaste tu contraseña?</p>
+            )}
           </div>
           <div className="form-part buttons">
             <button>Ingresar</button>
@@ -54,4 +51,4 @@ const LoginInput = () => {
   );
 };
 
-export default LoginInput;
+export default Login;
