@@ -7,26 +7,38 @@ import Objetivos from "./pages/Objetivos";
 import Login from "./pages/Login";
 import Header from "./pages/Header";
 import Footer from "./pages/Footer";
-import { AuthProvider } from "./contexts/AuthContext";
+import {
+  AYUDA,
+  CONTACTO,
+  LOGIN,
+  OBJETIVOS,
+  PRIVATE,
+} from "./config/routes/paths";
+import AuthContextProvider from "./contexts/AuthContext";
+import Computo from "./pages/Computo";
+import PublicRoute from "./components/router/PublicRoute";
+import PrivateRoute from "./components/router/PrivateRoute";
 
 function App() {
   return (
-    <AuthProvider>
+    <AuthContextProvider>
       <Router>
         <Header />
         <Routes>
-          <Route path={<PublicRoute />}>
+          <Route path="/" element={<PublicRoute />}>
             <Route index element={<Home />} />
-            <Route path="/objetivos" element={<Objetivos />} />
-            <Route path="/contacto" element={<Contactos />} />
-            <Route path="/ayuda" element={<Ayuda />} />
-            <Route path="/login" element={<Login />} />
+            <Route path={OBJETIVOS} element={<Objetivos />} />
+            <Route path={CONTACTO} element={<Contactos />} />
+            <Route path={AYUDA} element={<Ayuda />} />
+            <Route path={LOGIN} element={<Login />} />
           </Route>
-          <Route path={Private}></Route>
+          <Route path={PRIVATE} element={<PrivateRoute />}>
+            <Route index element={<Computo />} />
+          </Route>
         </Routes>
         <Footer />
       </Router>
-    </AuthProvider>
+    </AuthContextProvider>
   );
 }
 

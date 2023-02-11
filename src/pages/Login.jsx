@@ -1,6 +1,6 @@
 import "./Login.css";
 import React, { useContext } from "react";
-import LoginContext from "../contexts/AuthContext";
+
 const Login = () => {
   const { form, handleSubmit, handleInput, oportunidad } =
     useContext(LoginContext);
