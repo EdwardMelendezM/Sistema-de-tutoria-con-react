@@ -10,7 +10,6 @@ import Footer from "./pages/Footer";
 import Error404 from "./pages/Error404";
 import {
   AYUDA,
-  COMPUTO,
   CONTACTO,
   ERROR404,
   LOGIN,

@@ -1,6 +1,7 @@
 import "./Login.css";
-import React, { useState } from "react";
+import { useState } from "react";
 import { useAuthContext } from "../contexts/AuthContext";
+import { useFetch } from "../hooks/useFetch";
 
 const Login = () => {
   const initialDb = [
@@ -56,9 +57,24 @@ const Login = () => {
       [e.target.name]: e.target.value,
     });
   };
-
+  const getData = async (url, form) => {
+    const newForm = { email: form.usuario, password: form.contraseña };
+    console.log(newForm);
+    await fetch(url, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(newForm),
+    })
+      .then((res) => res.json())
+      .then((newDatos) => console.log(newDatos))
+      .catch((err) => console.log(err));
+  };
   const handleSubmit = (e) => {
     e.preventDefault();
+    getData("http://localhost:3002/users/login", form);
+    console.log(form);
     let existUser = db.find(
       (user) => user.user === form.usuario && user.pass === form.contraseña
     );
@@ -84,6 +100,7 @@ const Login = () => {
               value={form.usuario}
               onChange={handleInput}
               className={oportunidad != 3 ? "errorActivado" : ""}
+              autoComplete="off"
             />
           </div>
           <div className="form-part">
@@ -96,6 +113,7 @@ const Login = () => {
               value={form.contraseña}
               onChange={handleInput}
               className={oportunidad != 3 ? "errorActivado" : ""}
+              autoComplete="off"
             />
           </div>
           <div className="form-part">
