@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import { Link } from "react-router-dom";
-import { useAuthContext } from "../../contexts/AuthContext";
+import { useAuthContext } from "../../../contexts/AuthContext";
+
 import "./sidebar.css";
 export default function Sidebar() {
   const refNavigation = useRef(null);
@@ -31,12 +32,12 @@ export default function Sidebar() {
         <div className="menuToggle" onClick={handleActiveNavigator}></div>
         <ul>
           <li
-            className="list active"
+            className="list active "
             ref={refList}
             onClick={handleClickListItem}
           >
             <Link to="/computo">
-              <span className="icon">
+              <span className="icon home">
                 <ion-icon name="home-outline"></ion-icon>
               </span>
               <span className="text">Home</span>
@@ -44,7 +45,7 @@ export default function Sidebar() {
           </li>
           <li className="list" ref={refList} onClick={handleClickListItem}>
             <Link to="/computo/about">
-              <span className="icon">
+              <span className="icon about">
                 <ion-icon name="person-outline"></ion-icon>
               </span>
               <span className="text">About</span>
@@ -52,7 +53,7 @@ export default function Sidebar() {
           </li>
           <li className="list" ref={refList} onClick={handleClickListItem}>
             <Link to="/computo/session">
-              <span className="icon">
+              <span className="icon session">
                 <ion-icon name="chatbubble-outline"></ion-icon>
               </span>
               <span className="text">Sessions</span>
@@ -60,7 +61,7 @@ export default function Sidebar() {
           </li>
           <li className="list" ref={refList} onClick={handleClickListItem}>
             <Link to="/computo/reserve">
-              <span className="icon">
+              <span className="icon reserve">
                 <ion-icon name="camera-outline"></ion-icon>
               </span>
               <span className="text">Reserve</span>
@@ -68,7 +69,7 @@ export default function Sidebar() {
           </li>
           <li className="list" ref={refList} onClick={handleClickListItem}>
             <Link to="/computo/setting">
-              <span className="icon">
+              <span className="icon setting">
                 <ion-icon name="settings-outline"></ion-icon>
               </span>
               <span className="text">Setting</span>
@@ -82,8 +83,6 @@ export default function Sidebar() {
           <span className="text">Logout</span>
         </div>
       </div>
-      {/* <h3>Este es el sidebar</h3>
-      <button onClick={() => logout()}>Salir</button> */}
     </div>
   );
 }

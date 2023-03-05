@@ -1,4 +1,4 @@
-import Sidebar from "../dashboard/Sidebar";
+import Sidebar from "../dashboard/sidebar/Sidebar";
 import Panel from "../panel/Panel";
 export default function LayoutComputo({ children }) {
   return (

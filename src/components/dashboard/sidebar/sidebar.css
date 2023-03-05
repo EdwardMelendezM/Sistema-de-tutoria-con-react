@@ -102,9 +102,24 @@
 
 .navigation ul li.active a .icon {
   color: white;
-  background-color: #cf3838;
   /*   */
 }
+.navigation ul li.active a .home {
+  background-color: #f44336;
+}
+.navigation ul li.active a .about {
+  background-color: #ffa117;
+}
+.navigation ul li.active a .session {
+  background-color: #0fc70f;
+}
+.navigation ul li.active a .reserve {
+  background-color: #b145e9;
+}
+.navigation ul li.active a .setting {
+  background-color: #2196f3;
+}
+
 .navigation ul li a .icon::before {
   content: "";
   position: absolute;
@@ -112,7 +127,6 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--clr);
   filter: blur(8px);
   opacity: 0;
   transition: 0.5s;
@@ -136,10 +150,6 @@
 .navigation.open ul li a .text {
   opacity: 1;
   visibility: visible;
-}
-
-.navigation ul li.active a .text {
-  color: #cf3838;
 }
 
 .navigation .menuLogout {

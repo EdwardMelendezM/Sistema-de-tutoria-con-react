@@ -1,0 +1,61 @@
+.containerUserHeader {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 20px 0;
+}
+.containerUserHeader_unsaac {
+  width: 10%;
+}
+.containerUserHeader_unsaac-img {
+  width: 60px;
+}
+.containerUserHeader_titulo {
+  font-size: 1.25em;
+  color: white;
+  text-shadow: 1px 2px 3px #000;
+}
+.containerUserHeader_titulo {
+  width: 60%;
+  text-align: center;
+  font-weight: 500;
+}
+.containerUserHeader_datos {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.containerUserHeader_datos_img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: aqua;
+
+  overflow: hidden;
+}
+.containerUserHeader_datos_img-img {
+  width: 70px;
+  object-fit: cover;
+}
+.containerUserHeader_datos_usuario {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  padding: 5px;
+}
+.containerUserHeader_datos_usuario-nombreUsuario {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: white;
+}
+.containerUserHeader_datos_usuario {
+  color: white;
+  font-size: 0.9em;
+}

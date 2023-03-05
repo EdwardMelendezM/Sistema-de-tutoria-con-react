@@ -25,10 +25,10 @@ import PublicRoute from "./components/router/PublicRoute";
 import PrivateRoute from "./components/router/PrivateRoute";
 import LayoutHome from "./components/layout/LayoutHome";
 import LayoutComputo from "./components/layout/LayoutComputo";
-import ComputoAbout from "./pages/computo/ComputoAbout";
-import ComputoSession from "./pages/computo/ComputoSession";
-import ComputoReserve from "./pages/computo/ComputoReserve";
-import ComputoSetting from "./pages/computo/ComputoSetting";
+import ComputoAbout from "./pages/computo/about/ComputoAbout";
+import ComputoSession from "./pages/computo/session/ComputoSession";
+import ComputoReserve from "./pages/computo/reserve/ComputoReserve";
+import ComputoSetting from "./pages/computo/setting/ComputoSetting";
 
 function App() {
   return (
