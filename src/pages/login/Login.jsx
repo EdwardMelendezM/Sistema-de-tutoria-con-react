@@ -58,7 +58,6 @@ const Login = () => {
   };
   const getData = async (url, form) => {
     const newForm = { email: form.usuario, password: form.contraseña };
-    console.log(newForm);
     await fetch(url, {
       method: "POST",
       headers: {
@@ -67,19 +66,17 @@ const Login = () => {
       body: JSON.stringify(newForm),
     })
       .then((res) => res.json())
-      .then((newDatos) => console.log(newDatos))
-      .catch((err) => console.log(err));
+      .then((newDatos) => console.log())
+      .catch((err) => console.log());
   };
   const handleSubmit = (e) => {
     e.preventDefault();
     getData("http://localhost:3002/users/login", form);
-    console.log(form);
     let existUser = db.find(
       (user) => user.user === form.usuario && user.pass === form.contraseña
     );
     if (!existUser) {
       setOportunidad(oportunidad - 1);
-      console.log("Intenta nuevamente");
     } else {
       login();
     }

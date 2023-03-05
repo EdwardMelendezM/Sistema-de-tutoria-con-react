@@ -1,4 +1,4 @@
 import "./panel.css";
-export default function Panel(data) {
-  return <div>Este es el panel de operaciones</div>;
+export default function Panel({ children }) {
+  return <div className="panelContainer">{children}</div>;
 }
