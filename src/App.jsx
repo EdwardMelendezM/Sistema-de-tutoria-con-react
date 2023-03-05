@@ -11,9 +11,13 @@ import {
   AYUDA,
   CONTACTO,
   ERROR404,
+  HOME_RESERVE,
+  HOME_SESSION,
+  HOME_ABOUT,
   LOGIN,
   OBJETIVOS,
   PRIVATE,
+  HOME_SETTING,
 } from "./config/routes/paths";
 import AuthContextProvider from "./contexts/AuthContext";
 import Computo from "./pages/computo/Computo";
@@ -21,6 +25,10 @@ import PublicRoute from "./components/router/PublicRoute";
 import PrivateRoute from "./components/router/PrivateRoute";
 import LayoutHome from "./components/layout/LayoutHome";
 import LayoutComputo from "./components/layout/LayoutComputo";
+import ComputoAbout from "./pages/computo/ComputoAbout";
+import ComputoSession from "./pages/computo/ComputoSession";
+import ComputoReserve from "./pages/computo/ComputoReserve";
+import ComputoSetting from "./pages/computo/ComputoSetting";
 
 function App() {
   return (
@@ -46,6 +54,22 @@ function App() {
           </Route>
           <Route path={PRIVATE} element={<PrivateRoute />}>
             <Route index element={<LayoutComputo children={<Computo />} />} />
+            <Route
+              path={HOME_ABOUT}
+              element={<LayoutComputo children={<ComputoAbout />} />}
+            />
+            <Route
+              path={HOME_SESSION}
+              element={<LayoutComputo children={<ComputoSession />} />}
+            />
+            <Route
+              path={HOME_RESERVE}
+              element={<LayoutComputo children={<ComputoReserve />} />}
+            />
+            <Route
+              path={HOME_SETTING}
+              element={<LayoutComputo children={<ComputoSetting />} />}
+            />
             <Route path={ERROR404} element={<Error404 />} />
           </Route>
         </Routes>

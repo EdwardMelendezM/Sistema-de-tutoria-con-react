@@ -26,7 +26,7 @@ export default function Sidebar() {
 
   const { logout } = useAuthContext();
   return (
-    <>
+    <div className="sidebarContainer">
       <div className="navigation" ref={refNavigation}>
         <div className="menuToggle" onClick={handleActiveNavigator}></div>
         <ul>
@@ -35,7 +35,7 @@ export default function Sidebar() {
             ref={refList}
             onClick={handleClickListItem}
           >
-            <Link>
+            <Link to="/computo">
               <span className="icon">
                 <ion-icon name="home-outline"></ion-icon>
               </span>
@@ -43,7 +43,7 @@ export default function Sidebar() {
             </Link>
           </li>
           <li className="list" ref={refList} onClick={handleClickListItem}>
-            <Link to="">
+            <Link to="/computo/about">
               <span className="icon">
                 <ion-icon name="person-outline"></ion-icon>
               </span>
@@ -51,7 +51,7 @@ export default function Sidebar() {
             </Link>
           </li>
           <li className="list" ref={refList} onClick={handleClickListItem}>
-            <Link to="">
+            <Link to="/computo/session">
               <span className="icon">
                 <ion-icon name="chatbubble-outline"></ion-icon>
               </span>
@@ -59,7 +59,7 @@ export default function Sidebar() {
             </Link>
           </li>
           <li className="list" ref={refList} onClick={handleClickListItem}>
-            <Link to="">
+            <Link to="/computo/reserve">
               <span className="icon">
                 <ion-icon name="camera-outline"></ion-icon>
               </span>
@@ -67,7 +67,7 @@ export default function Sidebar() {
             </Link>
           </li>
           <li className="list" ref={refList} onClick={handleClickListItem}>
-            <Link to="">
+            <Link to="/computo/setting">
               <span className="icon">
                 <ion-icon name="settings-outline"></ion-icon>
               </span>
@@ -84,6 +84,6 @@ export default function Sidebar() {
       </div>
       {/* <h3>Este es el sidebar</h3>
       <button onClick={() => logout()}>Salir</button> */}
-    </>
+    </div>
   );
 }

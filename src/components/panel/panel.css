@@ -1,6 +1,4 @@
 .panelContainer {
-  position: absolute;
-  left: 18%;
-  width: 80%;
-  min-height: 100vh;
+  width: 100%;
+  min-height: 120vh;
 }

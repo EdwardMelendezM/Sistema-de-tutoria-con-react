@@ -4,11 +4,14 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
+.sidebarContainer {
+  min-height: 100vh;
+  min-width: 200px;
+}
 .navigation {
   position: fixed;
   height: 100%;
   width: 75px;
-
   background-color: #fff;
   transition: 0.5s;
   display: flex;
@@ -16,7 +19,7 @@
   align-items: center;
 }
 .navigation.open {
-  width: 210px;
+  width: 190px;
 }
 .navigation .menuToggle {
   position: absolute;
