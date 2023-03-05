@@ -1,13 +1,13 @@
 import { HashRouter as Router, Route, Routes } from "react-router-dom";
 
-import Ayuda from "./pages/Ayuda";
-import Contactos from "./pages/Contactos";
-import Home from "./pages/Home";
-import Objetivos from "./pages/Objetivos";
-import Login from "./pages/Login";
-import Header from "./pages/Header";
-import Footer from "./pages/Footer";
-import Error404 from "./pages/Error404";
+import Ayuda from "./pages/home/Ayuda";
+import Contactos from "./pages/home/Contactos";
+import Home from "./pages/home/Home";
+import Objetivos from "./pages/home/Objetivos";
+import Login from "./pages/login/Login";
+import Header from "./pages/layout/public/Header";
+import Footer from "./pages/layout/public/Footer";
+import Error404 from "./pages/error/Error404";
 import {
   AYUDA,
   CONTACTO,
@@ -17,7 +17,7 @@ import {
   PRIVATE,
 } from "./config/routes/paths";
 import AuthContextProvider from "./contexts/AuthContext";
-import Computo from "./pages/Computo";
+import Computo from "./pages/computo/Computo";
 import PublicRoute from "./components/router/PublicRoute";
 import PrivateRoute from "./components/router/PrivateRoute";
 

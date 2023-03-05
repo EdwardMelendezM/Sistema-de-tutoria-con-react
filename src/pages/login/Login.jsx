@@ -1,7 +1,6 @@
 import "./Login.css";
 import { useState } from "react";
-import { useAuthContext } from "../contexts/AuthContext";
-import { useFetch } from "../hooks/useFetch";
+import { useAuthContext } from "../../contexts/AuthContext";
 
 const Login = () => {
   const initialDb = [
