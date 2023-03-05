@@ -4,6 +4,7 @@ import { useAuthContext } from "../../contexts/AuthContext";
 import "./sidebar.css";
 export default function Sidebar() {
   const refNavigation = useRef(null);
+  const refList = useRef(null);
 
   const handleActiveNavigator = () => {
     const navigationContainer = refNavigation.current;
@@ -14,6 +15,14 @@ export default function Sidebar() {
       navigationContainer.classList.add("open");
     }
   };
+  const handleClickListItem = (e) => {
+    const list = document.querySelectorAll(".list");
+    function activeLink() {
+      list.forEach((item) => item.classList.remove("active"));
+      this.classList.add("active");
+    }
+    list.forEach((item) => item.addEventListener("click", activeLink));
+  };
 
   const { logout } = useAuthContext();
   return (
@@ -21,7 +30,11 @@ export default function Sidebar() {
       <div className="navigation" ref={refNavigation}>
         <div className="menuToggle" onClick={handleActiveNavigator}></div>
         <ul>
-          <li className="list">
+          <li
+            className="list active"
+            ref={refList}
+            onClick={handleClickListItem}
+          >
             <Link>
               <span className="icon">
                 <ion-icon name="home-outline"></ion-icon>
@@ -29,7 +42,7 @@ export default function Sidebar() {
               <span className="text">Home</span>
             </Link>
           </li>
-          <li className="list">
+          <li className="list" ref={refList} onClick={handleClickListItem}>
             <Link to="">
               <span className="icon">
                 <ion-icon name="person-outline"></ion-icon>
@@ -37,7 +50,7 @@ export default function Sidebar() {
               <span className="text">About</span>
             </Link>
           </li>
-          <li className="list">
+          <li className="list" ref={refList} onClick={handleClickListItem}>
             <Link to="">
               <span className="icon">
                 <ion-icon name="chatbubble-outline"></ion-icon>
@@ -45,7 +58,7 @@ export default function Sidebar() {
               <span className="text">Sessions</span>
             </Link>
           </li>
-          <li className="list">
+          <li className="list" ref={refList} onClick={handleClickListItem}>
             <Link to="">
               <span className="icon">
                 <ion-icon name="camera-outline"></ion-icon>
@@ -53,7 +66,7 @@ export default function Sidebar() {
               <span className="text">Reserve</span>
             </Link>
           </li>
-          <li className="list">
+          <li className="list" ref={refList} onClick={handleClickListItem}>
             <Link to="">
               <span className="icon">
                 <ion-icon name="settings-outline"></ion-icon>

@@ -73,7 +73,7 @@
   width: 100%;
   height: 60px;
   padding: 0 5px;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 .navigation ul li a {
   position: relative;
@@ -99,7 +99,7 @@
 
 .navigation ul li.active a .icon {
   color: white;
-  background-color: var(--clr);
+  background-color: #cf3838;
   /*   */
 }
 .navigation ul li a .icon::before {
@@ -136,7 +136,7 @@
 }
 
 .navigation ul li.active a .text {
-  color: var(--clr);
+  color: #cf3838;
 }
 
 .navigation .menuLogout {
