@@ -29,3 +29,12 @@ html {
 .mainError404 img {
   width: 470px;
 }
+
+.containerSystem {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--color-alpha-principal);
+  min-height: 100vh;
+  width: 100%;
+}

@@ -20,6 +20,7 @@ import Computo from "./pages/computo/Computo";
 import PublicRoute from "./components/router/PublicRoute";
 import PrivateRoute from "./components/router/PrivateRoute";
 import LayoutHome from "./components/layout/LayoutHome";
+import LayoutComputo from "./components/layout/LayoutComputo";
 
 function App() {
   return (
@@ -44,7 +45,7 @@ function App() {
             />
           </Route>
           <Route path={PRIVATE} element={<PrivateRoute />}>
-            <Route index element={<Computo />} />
+            <Route index element={<LayoutComputo children={<Computo />} />} />
             <Route path={ERROR404} element={<Error404 />} />
           </Route>
         </Routes>
