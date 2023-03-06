@@ -12,8 +12,20 @@ export default function Contentdash() {
         </thead>
         <tbody className="containerDashboar_table-body">
           <tr>
-            <td>1 dia y 2h</td>
-            <td>Session</td>
+            <td>2h</td>
+            <td>Session de aprendizaje</td>
+          </tr>
+          <tr>
+            <td>2 dias y 30min</td>
+            <td>Maestria de colmena</td>
+          </tr>
+          <tr>
+            <td>1 semana y 2 dias</td>
+            <td>Practica de artesania</td>
+          </tr>
+          <tr>
+            <td>1 semana y 3 dias</td>
+            <td>Practica de matematica</td>
           </tr>
         </tbody>
       </table>

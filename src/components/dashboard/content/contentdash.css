@@ -5,17 +5,32 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.25);
   border-radius: 10px;
-  box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px 0px rgba(255, 255, 255, 0.5);
   gap: 10px;
+  padding-bottom: 10px;
 }
 .containerDashboar-titulo {
+  margin-top: 10px;
+  padding: 5px;
   font-size: 1.5em;
   font-weight: bold;
   text-align: center;
   color: #e6b36d;
 }
 .containerDashboar_table {
-  width: 60%;
+  padding: 15px;
+  width: 80%;
+  border-collapse: collapse;
+  text-align: center;
+  border-spacing: 0;
+}
+.containerDashboar_table td,
+.containerDashboar_table th {
+  padding: 10px;
+  border-bottom: 1px solid #000000;
+}
+.containerDashboar_table th {
+  color: white;
 }

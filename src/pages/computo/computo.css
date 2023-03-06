@@ -1,4 +1,9 @@
 .container_computo {
   min-height: 70vh;
-  width: 100%;
+  width: 98%;
+}
+.container_computo_minis {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
