@@ -1,0 +1,21 @@
+.containerDashboar {
+  width: 50%;
+  min-height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.5);
+  gap: 10px;
+}
+.containerDashboar-titulo {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  color: #e6b36d;
+}
+.containerDashboar_table {
+  width: 60%;
+}
