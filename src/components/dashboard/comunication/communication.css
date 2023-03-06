@@ -1,0 +1,91 @@
+.containerCommunication {
+  width: 520px;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 15px;
+}
+.containerCommunicationTitle-title {
+  font-size: 2.5em;
+  text-align: center;
+  color: azure;
+  padding: 6px;
+}
+.containerCommunicationContent {
+  width: 100%;
+  min-height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  flex-direction: column;
+}
+.containerCommunicationContent_chat {
+  width: 100%;
+  min-height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+.containerCommunicationContent_chat-active {
+  width: 100%;
+  min-height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.containerCommunicationContent_chat_img {
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.containerCommunicationContent_chat_img-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+.containerCommunicationContent_chat-text {
+  min-width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: left;
+}
+.containerCommunicationContent_chat-text-user {
+  color: #ccc;
+  font-size: 1.1em;
+  font-weight: 500;
+}
+.containerCommunicationContent_chat-text-message {
+  color: #ccc;
+  font-size: 0.7em;
+  font-weight: 500;
+}
+
+.containerCommunicationContent_chat-date {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 5px;
+  flex-direction: column;
+}
+.containerCommunicationContent_chat-date-date {
+  font-size: 1em;
+  color: #ccc;
+}
+.containerCommunicationContent_chat-date-icon {
+  font-size: 16px;
+  color: #efefef;
+  background-color: #ccc;
+}

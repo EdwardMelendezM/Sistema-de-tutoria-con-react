@@ -1,3 +1,4 @@
+import Communication from "../../components/dashboard/comunication/Communication";
 import Contentdash from "../../components/dashboard/content/Contentdash";
 import Userheader from "../../components/dashboard/header/userHeader";
 import Mini from "../../components/dashboard/minis/Mini";
@@ -20,7 +21,10 @@ const Computo = () => {
         />
         <Mini />
       </div>
-      <Contentdash />
+      <div className="container_computo_dash">
+        <Contentdash />
+        <Communication />
+      </div>
     </div>
   );
 };
