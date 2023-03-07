@@ -13,7 +13,7 @@
 .containerCommunicationTitle-title {
   font-size: 2.5em;
   text-align: center;
-  color: azure;
+  color: #e6b36d;
   padding: 6px;
 }
 .containerCommunicationContent {
@@ -33,13 +33,11 @@
   justify-content: space-around;
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
+.containerCommunicationContent_chat:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.1);
+}
 .containerCommunicationContent_chat-active {
-  width: 100%;
-  min-height: 90px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
   background-color: rgba(255, 255, 255, 0.15);
 }
 

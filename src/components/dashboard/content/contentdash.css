@@ -37,12 +37,18 @@
 
 .containerDashboar_table td,
 .containerDashboar_table th {
-  padding: 10px;
+  padding: 16px;
   border-bottom: 0.2px solid #ccc;
   color: white;
+  font-size: 0.9em;
+  font-style: var(--font-alpha-parrafo);
+  font-weight: bold;
 }
+
 .containerDashboar_table th {
   color: white;
+  font-weight: bold;
+  font-size: 1.3em;
 }
 .containerDashboar_table tr:nth-child(even) td {
   background: rgba(255, 255, 255, 0.2);

@@ -3,12 +3,23 @@
   width: 98%;
 }
 .container_computo_minis {
+  margin-top: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .container_computo_dash {
+  margin-bottom: 50px;
+  margin-top: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 10px;
+}
+
+@media (max-width: 1144px) {
+  .container_computo_dash {
+    flex-direction: column;
+    width: 100%;
+  }
 }

@@ -39,3 +39,6 @@ html {
   width: 100%;
   display: flex;
 }
+hr {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
