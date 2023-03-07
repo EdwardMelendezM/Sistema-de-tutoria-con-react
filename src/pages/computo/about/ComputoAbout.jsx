@@ -1,7 +1,12 @@
+import "./computoAbout.css";
+import Perfil from "../../../components/perfil/Perfil";
+import DatosUser from "../../../components/perfil/DatosUser";
+
 export default function ComputoAbout() {
   return (
-    <div>
-      <h3>Computo About</h3>
+    <div className="containerComputoAbout">
+      <Perfil />
+      <DatosUser />
     </div>
   );
 }

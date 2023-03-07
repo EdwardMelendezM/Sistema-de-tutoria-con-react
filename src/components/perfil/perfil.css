@@ -1,0 +1,57 @@
+.containerPerfil {
+  width: 40%;
+  padding: 20px;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  flex-direction: column;
+}
+.containerPerfil_Photo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.contaienrPerfil-Photo_img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.containerPerfil_Photo-img {
+  width: 90%;
+  border-radius: 50%;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.contaienrPerfil-Photo_img ion-icon {
+  position: absolute;
+  bottom: 0;
+
+  font-size: 2em;
+  padding: 15px;
+  background-color: #a21b2d;
+  border-radius: 50%;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+.containerPerfil_Photo ion-icon:hover {
+  background-color: #a21b2d99;
+}
+.containerPerfil_Photo_nameUser {
+  padding-top: 50px;
+  font-size: 1.3em;
+  font-weight: bold;
+  color: white;
+}
+.containerPerfil_Photo_rolUser {
+  color: white;
+  font-size: 1.1em;
+  padding: 10px;
+}

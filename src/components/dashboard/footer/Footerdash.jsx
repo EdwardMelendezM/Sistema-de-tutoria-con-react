@@ -3,7 +3,6 @@ import { useState } from "react";
 import "./footerdash.css";
 export default function Footerdash() {
   const [hora, setHora] = useState(new Date().toLocaleTimeString());
-
   setTimeout(() => {
     setHora(new Date().toLocaleTimeString());
   }, 1000);
