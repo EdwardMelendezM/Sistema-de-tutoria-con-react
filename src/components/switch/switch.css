@@ -1,0 +1,32 @@
+.labelSwitch {
+  display: inline-block;
+  width: 65px;
+  height: 33px;
+  background-color: #979797;
+  border-radius: 100px;
+  cursor: pointer;
+  position: relative;
+  transition: 0.3;
+}
+.labelSwitch::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: #eee;
+  border-radius: 100px;
+  top: 4px;
+  left: 4px;
+  transition: 0.3s;
+}
+#switch:checked + .labelSwitch::after {
+  left: 36px;
+}
+
+#switch:checked + .labelSwitch {
+  background-color: #0871b2;
+}
+#switch {
+  display: none;
+}

@@ -1,3 +1,4 @@
+import "./switch.css";
 export default function Switch() {
   return (
     <div className="switchContainer">
