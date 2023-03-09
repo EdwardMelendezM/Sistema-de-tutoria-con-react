@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { useAuthContext } from "../../../contexts/AuthContext";
 
@@ -32,7 +32,7 @@ export default function Sidebar() {
         <div className="menuToggle" onClick={handleActiveNavigator}></div>
         <ul>
           <li
-            className="list active "
+            className="list active"
             ref={refList}
             onClick={handleClickListItem}
           >
