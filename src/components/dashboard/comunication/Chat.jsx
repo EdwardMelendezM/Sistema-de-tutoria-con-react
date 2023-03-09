@@ -87,18 +87,21 @@ export default function Chat() {
                 <p className="containerChat_Messages_body_message_user_text_p">
                   Hi bro, how are you?
                 </p>
+                <p className="containerChat_Messages_body_message_user_text_date">
+                  10:10
+                </p>
               </div>
               <div className="containerChat_Messages_body_message_user_img">
-                <img src="" alt="" />
+                <img src="userImage.jpg" alt="" id="userImagePhoto" />
               </div>
             </div>
           </div>
         </div>
         <div className="containerChat_User_Container_footer">
-          <ion-icon name="add-circle-outline"></ion-icon>
+          <ion-icon name="add-outline" className="icon_add"></ion-icon>
           <input
             type="text"
-            className="containerChat_User_Container_footer_btn"
+            className="containerChat_User_Container_footer_input"
           />
           <ion-icon name="happy-outline"></ion-icon>
           <ion-icon name="send-outline"></ion-icon>

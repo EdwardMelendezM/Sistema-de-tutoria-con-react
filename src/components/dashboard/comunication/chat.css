@@ -190,11 +190,6 @@
   border-radius: 50%;
 }
 
-.containerChat_Messages_body {
-  min-height: 50vh;
-  background-color: rgba(255, 255, 255, 0.4);
-  width: 90%;
-}
 .containerChat_Messages_header_user {
   padding: 0 10px;
 }
@@ -215,4 +210,72 @@
 }
 .containerChat_Messages_header ion-icon:hover {
   color: rgba(255, 255, 255, 0.6);
+}
+
+.containerChat_Messages_body {
+  min-height: 60vh;
+
+  width: 95%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+.containerChat_Messages_body_message {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100%;
+  min-height: 110px;
+}
+#userImagePhoto {
+  width: 50px;
+  border-radius: 50%;
+}
+.containerChat_Messages_body_message_user {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.containerChat_Messages_body_message_user_text {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px 50px;
+  font-size: 1em;
+  color: white;
+  background-color: #3e3a3a;
+  border-radius: 10px;
+}
+.containerChat_Messages_body_message_user_text_date {
+  font-size: 0.8em;
+  color: #ccc;
+}
+
+.containerChat_User_Container_footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.containerChat_User_Container_footer ion-icon {
+  font-size: 1.5em;
+  padding: 5px;
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+}
+.containerChat_User_Container_footer ion-icon:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+.containerChat_User_Container_footer_input {
+  min-width: 80%;
+  height: 35px;
+  color: #272323;
+  background-color: transparent;
+  border: 0;
+  font-size: 1em;
 }
