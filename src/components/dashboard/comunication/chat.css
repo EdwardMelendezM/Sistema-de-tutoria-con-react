@@ -30,9 +30,10 @@
   justify-content: space-evenly;
   align-items: center;
   margin: 10px;
+  transition: 0.2s;
 }
 .container_Chat_User_button:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
   cursor: pointer;
 }
 .container_Chat_User_button ion-icon {
@@ -88,9 +89,7 @@
   border: 0;
   color: white;
 }
-.containerChat_User_Container_buscador_input::placeholder {
-  color: #ccc;
-}
+
 .containerChat_User_Container_buscador_input:focus,
 .containerChat_User_Container_buscador_input:active {
   border: 0;

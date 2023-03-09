@@ -1,9 +1,8 @@
 import Chat from "../../../components/dashboard/comunication/Chat";
-
+import "./computosession.css";
 export default function ComputoSession() {
   return (
-    <div>
-      <h3>Computo Session</h3>
+    <div className="containerComputoSession">
       <Chat />
     </div>
   );
