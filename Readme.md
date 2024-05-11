@@ -1,3 +1,3 @@
 # Sistema de tutorias
 
-In progress...
+Front para el sistema de turorias con un diseño elegante y simple. Tutorias en la unsaac.
